@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likheet Shetty's Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Likheet Shetty</h1>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="admin.html">Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h2>Welcome to My Blog</h2>
+                <p>Sharing thoughts, ideas, and experiences</p>
+            </section>
+
+            <!-- Newsletter Subscription -->
+            <section class="newsletter">
+                <div class="newsletter-box">
+                    <h3>Subscribe for Updates</h3>
+                    <p>Get notified when I publish new blog posts</p>
+                    <form id="subscribeForm" class="subscribe-form">
+                        <input type="email" id="emailInput" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div id="subscribeMessage" class="message"></div>
+                </div>
+            </section>
+
+            <!-- Blog Posts -->
+            <section class="blog-posts">
+                <h2>Latest Posts</h2>
+                <div id="postsContainer" class="posts-grid">
+                    <!-- Posts will be loaded dynamically -->
+                </div>
+                <div id="noPosts" class="no-posts" style="display: none;">
+                    <p>No blog posts yet. Check back soon!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Likheet Shetty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
