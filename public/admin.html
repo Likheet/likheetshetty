@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Likheet's Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="/">Likheet Shetty</a> - Admin Panel</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Back to Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <div class="container">
+            <section class="admin-section">
+                <h2>Create New Post</h2>
+                <form id="post-form" class="admin-form">
+                    <div class="form-group">
+                        <label for="post-title">Title:</label>
+                        <input type="text" id="post-title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="post-excerpt">Excerpt (Optional):</label>
+                        <textarea id="post-excerpt" rows="3" placeholder="Brief summary of the post..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="post-content">Content:</label>
+                        <textarea id="post-content" rows="15" required placeholder="Write your blog post content here..."></textarea>
+                    </div>
+                    
+                    <button type="submit">Publish Post</button>
+                </form>
+                
+                <div id="admin-message" class="message" style="display: none;"></div>
+            </section>
+
+            <section class="admin-section">
+                <h2>Manage Posts</h2>
+                <div id="admin-posts-list" class="admin-posts">
+                    <!-- Posts will be loaded here -->
+                    <div class="loading">Loading posts...</div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
