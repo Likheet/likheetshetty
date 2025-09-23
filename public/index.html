@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likheet Shetty's Blog</title>
+    <meta name="description" content="Personal blog by Likheet Shetty - Sharing thoughts, experiences, and insights">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="/">Likheet Shetty</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
+                    <li><a href="/admin" id="admin-link">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Welcome to My Blog</h2>
+                    <p>Sharing my thoughts, experiences, and insights on technology, life, and everything in between.</p>
+                    <button class="cta-button" onclick="scrollToSubscribe()">Stay Updated</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Section -->
+        <section id="blog-posts" class="blog-posts">
+            <div class="container">
+                <h2>Latest Posts</h2>
+                <div id="posts-container" class="posts-grid">
+                    <!-- Posts will be loaded dynamically -->
+                    <div class="loading">Loading posts...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>Hi! I'm Likheet Shetty, and this is my personal blog where I share my thoughts, experiences, and insights on various topics including technology, personal development, and life in general.</p>
+                    <p>I believe in the power of sharing knowledge and experiences to help others learn and grow. Through this blog, I hope to connect with like-minded individuals and contribute to meaningful conversations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscribe Section -->
+        <section id="subscribe" class="subscribe">
+            <div class="container">
+                <h2>Subscribe to My Blog</h2>
+                <p>Get notified whenever I publish a new post. No spam, just quality content delivered to your inbox.</p>
+                
+                <form id="subscription-form" class="subscription-form">
+                    <div class="form-group">
+                        <input type="text" id="subscriber-name" placeholder="Your Name (Optional)">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="subscriber-email" placeholder="Your Email Address" required>
+                    </div>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+                
+                <div id="subscription-message" class="message" style="display: none;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Likheet Shetty. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" onclick="unsubscribe()">Unsubscribe</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Post Detail Modal -->
+    <div id="post-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-post-content">
+                <!-- Post content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
