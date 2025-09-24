@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likheet Shetty · Developer Portfolio</title>
+    <meta name="description" content="Portfolio for Likheet Shetty showcasing achievements in AI, full-stack development, and engineering leadership.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Space Grotesk', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        midnight: '#090b1a',
+                        accent: '#6e7bff',
+                        accentSoft: '#b4c5ff',
+                        neon: '#5ef3d1'
+                    },
+                    maxWidth: {
+                        section: '1150px'
+                    },
+                    boxShadow: {
+                        glow: '0 0 40px rgba(94, 243, 209, 0.35)',
+                        card: '0 20px 45px rgba(10, 12, 32, 0.45)'
+                    },
+                    backgroundImage: {
+                        hero: 'radial-gradient(circle at top left, rgba(110, 123, 255, 0.45), transparent 55%), radial-gradient(circle at 30% 70%, rgba(94, 243, 209, 0.35), transparent 60%)'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-midnight text-slate-100 font-body">
+    <div class="glow-surface"></div>
+    <header class="fixed inset-x-0 top-0 z-30 border-b border-white/5 backdrop-blur-lg bg-midnight/70">
+        <nav class="mx-auto flex max-w-section items-center justify-between px-6 py-4">
+            <a href="#hero" class="text-lg font-display font-semibold tracking-tight text-white">Likheet Shetty</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="primary-navigation" class="nav-links hidden items-center gap-8 text-sm font-medium uppercase tracking-[0.18em] text-slate-300 lg:flex">
+                <li><a class="nav-link" href="#hero" data-nav-link>Home</a></li>
+                <li><a class="nav-link" href="#achievements" data-nav-link>Achievements</a></li>
+                <li><a class="nav-link" href="#experience" data-nav-link>Experience</a></li>
+                <li><a class="nav-link" href="#projects" data-nav-link>Projects</a></li>
+                <li><a class="nav-link" href="#skills" data-nav-link>Skills</a></li>
+                <li><a class="nav-link" href="#contact" data-nav-link>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-24">
+        <section id="hero" data-section class="relative overflow-hidden">
+            <div class="mx-auto flex max-w-section flex-col gap-12 px-6 pb-24 pt-28 lg:flex-row lg:items-center">
+                <div class="w-full lg:w-3/5">
+                    <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-accentSoft">AI Engineer · Full-Stack Developer</span>
+                    <h1 class="mt-8 font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">Engineering intelligent experiences that feel effortless.</h1>
+                    <p class="mt-6 max-w-2xl text-lg text-slate-300">I’m an engineering student and developer focused on building human-centred, AI-powered products. From voice-enabled apps to fraud detection models, I craft solutions that merge precision, accessibility, and scale.</p>
+                    <div class="mt-10 flex flex-wrap items-center gap-4">
+                        <a href="#projects" class="group inline-flex items-center gap-2 rounded-full border border-neon/60 bg-neon/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-neon transition hover:bg-neon/20 hover:shadow-glow">Explore Work <span aria-hidden="true" class="transition group-hover:translate-x-1">→</span></a>
+                        <a href="mailto:likheet.s@gmail.com" class="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-200 transition hover:border-white/40 hover:text-white">Let's Collaborate</a>
+                    </div>
+                    <dl class="mt-12 grid gap-6 text-sm text-slate-300 sm:grid-cols-2">
+                        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                            <dt class="text-xs uppercase tracking-[0.35em] text-slate-400">Current Focus</dt>
+                            <dd class="mt-3 font-display text-xl text-white">AI-driven interfaces &amp; scalable web systems</dd>
+                        </div>
+                        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                            <dt class="text-xs uppercase tracking-[0.35em] text-slate-400">Based In</dt>
+                            <dd class="mt-3 font-display text-xl text-white">Bangalore, India · GMT+5:30</dd>
+                        </div>
+                    </dl>
+                    <div class="mt-12 flex flex-wrap items-center gap-5 text-sm text-slate-400">
+                        <a class="inline-flex items-center gap-2 hover:text-neon" href="https://www.linkedin.com/in/likheet" target="_blank" rel="noopener">LinkedIn<span aria-hidden="true">↗</span></a>
+                        <a class="inline-flex items-center gap-2 hover:text-neon" href="https://github.com/likheetshetty" target="_blank" rel="noopener">GitHub<span aria-hidden="true">↗</span></a>
+                        <a class="inline-flex items-center gap-2 hover:text-neon" href="https://www.hackerrank.com/likheet" target="_blank" rel="noopener">HackerRank<span aria-hidden="true">↗</span></a>
+                        <span class="inline-flex items-center gap-2 text-slate-500">📞 +91 89040 90247</span>
+                    </div>
+                </div>
+                <div class="relative w-full lg:w-2/5">
+                    <div class="glass-tile">
+                        <p class="text-sm uppercase tracking-[0.35em] text-neon/80">Snapshot</p>
+                        <ul class="mt-6 space-y-4 text-sm text-slate-200">
+                            <li class="flex items-start gap-4"><span class="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-neon"></span><span>Azure AI Engineer Associate · Google Cloud Digital Leader certified</span></li>
+                            <li class="flex items-start gap-4"><span class="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-neon"></span><span>Top 20 finish in GeeksforGeeks Weekly Contest 162 · 3⭐ HackerRank problem solving</span></li>
+                            <li class="flex items-start gap-4"><span class="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-neon"></span><span>Experience delivering responsive web products &amp; bot detection systems at DesiQna</span></li>
+                            <li class="flex items-start gap-4"><span class="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-neon"></span><span>Passionate technologist exploring 3D web, data science, and voice-first interfaces</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" data-section class="relative border-t border-white/5 py-24">
+            <div class="mx-auto max-w-section px-6">
+                <div class="section-heading">
+                    <span>Milestones</span>
+                    <h2>Highlights that reflect curiosity and rigor</h2>
+                    <p>Certifications and recognitions that underscore a commitment to building trustworthy, scalable technology.</p>
+                </div>
+                <div class="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+                    <article class="capsule-card">
+                        <h3>Azure AI Engineer Associate</h3>
+                        <p>Validated expertise in designing and implementing AI solutions on Azure—covering NLP, vision, and responsible AI practices.</p>
+                    </article>
+                    <article class="capsule-card">
+                        <h3>Google Cloud Digital Leader</h3>
+                        <p>Developed fluency in modern cloud foundations by completing 50+ skill labs and architecting secure, efficient cloud workflows.</p>
+                    </article>
+                    <article class="capsule-card">
+                        <h3>GeeksforGeeks Contest #162 · Top 20</h3>
+                        <p>Ranked 20th globally for algorithmic proficiency in a high-paced weekly coding challenge.</p>
+                    </article>
+                    <article class="capsule-card">
+                        <h3>3★ Problem Solving · HackerRank</h3>
+                        <p>Consistently solving complex data structures and algorithms problems with a focus on clean, optimized solutions.</p>
+                    </article>
+                    <article class="capsule-card">
+                        <h3>CYBERATIC Quiz · 2nd Place</h3>
+                        <p>Secured runner-up position across the institute in a cybersecurity-driven knowledge challenge.</p>
+                    </article>
+                    <article class="capsule-card">
+                        <h3>MATLAB Onramp Certified</h3>
+                        <p>Built a foundation in numerical computing and simulation to support research-driven engineering explorations.</p>
+                    </article>
+=======
+    <title>Likheet Shetty · Software Engineer Portfolio</title>
+    <meta name="description" content="Developer portfolio for Likheet Shetty showcasing achievements, resume highlights, and selected projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80" tabindex="0">
+    <header>
+        <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#home">Likheet Shetty</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section min-vh-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <span class="badge rounded-pill bg-gradient mb-3">Full-Stack Developer · UI Engineer</span>
+                        <h1 class="display-4 fw-bold text-white">Crafting human-centred products that scale.</h1>
+                        <p class="lead text-white-50 mt-3 mb-4">I help ambitious teams build immersive web experiences and resilient engineering systems. My work blends design thinking with robust architecture to ship delightful products.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a class="btn btn-light btn-lg px-4" href="#projects"><i class="bi bi-code-slash me-2"></i>View Projects</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="#resume"><i class="bi bi-file-earmark-text me-2"></i>Resume Snapshot</a>
+                        </div>
+                        <div class="d-flex gap-3 mt-5 social-links">
+                            <a class="text-white-50" href="https://github.com/likheetshetty" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+                            <a class="text-white-50" href="https://www.linkedin.com/in/likheetshetty" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+                            <a class="text-white-50" href="mailto:hello@likheet.dev"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mt-5 mt-lg-0">
+                        <div class="hero-card glass-card p-4 p-lg-5 text-white">
+                            <h2 class="h4 fw-semibold mb-3">Mission at a Glance</h2>
+                            <p class="mb-4">Creating polished developer experiences across the stack, from thoughtful user interfaces to resilient backend services.</p>
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="metric">
+                                        <span class="h3 fw-bold">6+</span>
+                                        <span class="text-white-50">Years shipping</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric">
+                                        <span class="h3 fw-bold">24</span>
+                                        <span class="text-white-50">Products launched</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric">
+                                        <span class="h3 fw-bold">92%</span>
+                                        <span class="text-white-50">User satisfaction</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric">
+                                        <span class="h3 fw-bold">4x</span>
+                                        <span class="text-white-50">Avg. ROI uplift</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" data-section class="relative py-24">
+            <div class="mx-auto max-w-section px-6">
+                <div class="section-heading">
+                    <span>Experience</span>
+                    <h2>Turning ideas into robust, production-ready systems</h2>
+                    <p>Leading projects from user empathy to deployment, with attention to security, accessibility, and maintainability.</p>
+                </div>
+                <div class="mt-16 space-y-10 border-l border-white/10 pl-6">
+                    <article class="timeline-node">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-body">
+                            <div class="flex flex-wrap items-baseline justify-between gap-3">
+                                <h3 class="text-xl font-semibold text-white">SDE Intern · DesiQna</h3>
+                                <span class="text-sm uppercase tracking-[0.3em] text-slate-400">Jul 2023 – Dec 2023 · Remote, India</span>
+                            </div>
+                            <ul class="mt-5 space-y-3 text-sm text-slate-300">
+                                <li>Engineered a responsive content experience, elevating engagement for a high-traffic Q&amp;A community.</li>
+                                <li>Designed verification flows and anti-bot safeguards, integrating Google reCAPTCHA to protect user trust.</li>
+                                <li>Collaborated across design and backend stakeholders to refine architecture using HTML, CSS, JavaScript, Bootstrap, and MySQL.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="timeline-node">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-body">
+                            <div class="flex flex-wrap items-baseline justify-between gap-3">
+                                <h3 class="text-xl font-semibold text-white">Green Environment Program</h3>
+                                <span class="text-sm uppercase tracking-[0.3em] text-slate-400">Community Initiative</span>
+                            </div>
+                            <p class="mt-5 text-sm text-slate-300">Contributed to sustainability advocacy by orchestrating awareness campaigns focused on waste management and grassroots environmental action.</p>
+                        </div>
+                    </article>
+=======
+        <section id="about" class="section-padding">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-6">
+                        <h2 class="section-title">Engineer. Strategist. Mentor.</h2>
+                        <p class="lead text-muted">I partner with product teams to transform complex requirements into elegant, accessible experiences. With a background in computer science and product design, I obsess over the details that make software intuitive and scalable.</p>
+                        <p class="text-muted">From prototyping ambitious concepts to orchestrating cloud-native architectures, I bridge the gap between vision and delivery. I enjoy mentoring engineers, creating design systems, and automating workflows that keep teams shipping faster.</p>
+                        <div class="d-flex flex-wrap gap-3 mt-4">
+                            <span class="badge rounded-pill bg-light text-dark border">React &amp; Next.js</span>
+                            <span class="badge rounded-pill bg-light text-dark border">Node &amp; Express</span>
+                            <span class="badge rounded-pill bg-light text-dark border">Design Systems</span>
+                            <span class="badge rounded-pill bg-light text-dark border">Cloud Architecture</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 ms-lg-auto">
+                        <div class="glass-card h-100 p-4">
+                            <h3 class="h5 fw-semibold mb-3">Highlights</h3>
+                            <ul class="list-unstyled timeline-list">
+                                <li>
+                                    <span class="timeline-dot"></span>
+                                    <div>
+                                        <h4 class="h6 mb-1">Led developer experience squad at PixelForge</h4>
+                                        <p class="text-muted mb-0">Rolled out a unified component library used by 12+ teams.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline-dot"></span>
+                                    <div>
+                                        <h4 class="h6 mb-1">Spoke at JSConf Asia 2023</h4>
+                                        <p class="text-muted mb-0">Shared strategies for scaling design systems with accessibility.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="timeline-dot"></span>
+                                    <div>
+                                        <h4 class="h6 mb-1">OSS maintainer</h4>
+                                        <p class="text-muted mb-0">Creator of <strong>Framerise</strong>, a tooling kit for prototyping dashboards.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" data-section class="relative border-y border-white/5 py-24">
+            <div class="mx-auto max-w-section px-6">
+                <div class="section-heading">
+                    <span>Projects</span>
+                    <h2>Experiments and products that explore AI, data, and creative coding</h2>
+                    <p>Select work spanning fraud detection, pathfinding visualizations, and immersive 3D web experiences.</p>
+                </div>
+                <div class="mt-12 flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.3em] text-slate-300">
+                    <button class="filter-chip active" type="button" data-filter="all">All</button>
+                    <button class="filter-chip" type="button" data-filter="ai">AI &amp; Data</button>
+                    <button class="filter-chip" type="button" data-filter="web">Web</button>
+                    <button class="filter-chip" type="button" data-filter="creative">Creative Tech</button>
+                </div>
+                <div class="mt-16 grid gap-10 md:grid-cols-2">
+                    <article class="project-card" data-project data-tags="ai">
+                        <div class="flex items-center justify-between gap-3">
+                            <h3>Credit Card Fraud Detection</h3>
+                            <span class="project-tag">AI &amp; Data</span>
+                        </div>
+                        <p>Built an ensemble-based model combining Random Forest and Gradient Boosting to surface rare fraudulent transactions. Employed SMOTE and Near-Miss for class balance and benchmarked 6+ models, including stacking approaches.</p>
+                        <p class="tech">Python · NumPy · Pandas · Scikit-Learn</p>
+                    </article>
+                    <article class="project-card" data-project data-tags="web">
+                        <div class="flex items-center justify-between gap-3">
+                            <h3>AI News App</h3>
+                            <span class="project-tag">Web</span>
+                        </div>
+                        <p>Designed a voice-first news platform with Alan AI, enabling conversational navigation, article summarization, and hands-free browsing using React and Material UI.</p>
+                        <p class="tech">Alan AI · React · Material UI · JavaScript</p>
+                    </article>
+                    <article class="project-card" data-project data-tags="web">
+                        <div class="flex items-center justify-between gap-3">
+                            <h3>Pathfinding Algorithms Visualiser</h3>
+                            <span class="project-tag">Web</span>
+                        </div>
+                        <p>Interactive playground supporting DFS, BFS, A*, and Dijkstra, with real-time maze generation and animation to demystify graph traversal strategies.</p>
+                        <p class="tech">HTML · CSS · JavaScript · Vis.js</p>
+                    </article>
+                    <article class="project-card" data-project data-tags="creative">
+                        <div class="flex items-center justify-between gap-3">
+                            <h3>Stack-It!</h3>
+                            <span class="project-tag">Creative Tech</span>
+                        </div>
+                        <p>Constructed a physics-based stacking game blending Three.js and Cannon.js with autopilot mode and tuned cooldowns for fluid, accessible gameplay.</p>
+                        <p class="tech">HTML · CSS · JavaScript · Three.js · Cannon.js</p>
+                    </article>
+=======
+        <section id="achievements" class="section-padding bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge rounded-pill bg-primary-subtle text-primary">Notable Wins</span>
+                    <h2 class="section-title mt-3">Achievements that drive impact</h2>
+                    <p class="text-muted">A selection of milestones earned while building products for fintech, SaaS, and creator platforms.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="achievement-card h-100">
+                            <div class="icon-wrap">
+                                <i class="bi bi-trophy"></i>
+                            </div>
+                            <h3 class="h5">Product Hunt Golden Kitty</h3>
+                            <p class="text-muted">Awarded for launching "Ledgerly", an automated finance assistant that ranked #1 overall with 4.8/5 user satisfaction.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="achievement-card h-100">
+                            <div class="icon-wrap">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="h5">Team Leadership Excellence</h3>
+                            <p class="text-muted">Scaled a 4-person squad into a 14-member product engineering team while maintaining 95% sprint predictability.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="achievement-card h-100">
+                            <div class="icon-wrap">
+                                <i class="bi bi-graph-up"></i>
+                            </div>
+                            <h3 class="h5">Revenue Accelerator</h3>
+                            <p class="text-muted">Delivered a conversion optimization initiative that lifted ARR by $3.1M through experimentation and UX overhauls.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" data-section class="relative py-24">
+            <div class="mx-auto max-w-section px-6">
+                <div class="section-heading">
+                    <span>Toolkit</span>
+                    <h2>Skills rooted in engineering fundamentals and experimentation</h2>
+                    <p>Combining systems thinking with product intuition to build experiences people trust.</p>
+                </div>
+                <div class="mt-16 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+                    <div class="space-y-8">
+                        <div class="skill-block">
+                            <h3>Languages</h3>
+                            <p>C · C++ · Python · SQL · HTML</p>
+                        </div>
+                        <div class="skill-block">
+                            <h3>Frameworks &amp; Libraries</h3>
+                            <p>Bootstrap · ShadCN · Three.js · Hugging Face APIs · Alan AI</p>
+                        </div>
+                        <div class="skill-block">
+                            <h3>Platforms &amp; Tools</h3>
+                            <p>Git · GitHub · Vercel · RapidAPI · Stable Diffusion · VS Code · PyCharm · Jupyter Notebook</p>
+                        </div>
+                    </div>
+                    <div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-card backdrop-blur">
+                        <h3 class="text-xl font-semibold text-white">Coursework &amp; Interests</h3>
+                        <ul class="mt-6 space-y-4 text-sm text-slate-300">
+                            <li><span class="text-neon">•</span> Operating Systems · Computer Networks · Object Oriented Programming</li>
+                            <li><span class="text-neon">•</span> Cloud-native AI integrations and responsible ML deployment</li>
+                            <li><span class="text-neon">•</span> Community impact through STEM advocacy and sustainability initiatives</li>
+                            <li><span class="text-neon">•</span> Recreational table tennis and BLS-certified volunteer work</li>
+                        </ul>
+=======
+        <section id="projects" class="section-padding">
+            <div class="container">
+                <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between mb-4">
+                    <div>
+                        <span class="badge rounded-pill bg-primary-subtle text-primary">Case Studies</span>
+                        <h2 class="section-title mt-3">Selected projects</h2>
+                        <p class="text-muted">Real-world engagements where I led architecture, front-end engineering, or product delivery.</p>
+                    </div>
+                    <div class="project-filters btn-group mt-3 mt-lg-0" role="group" aria-label="Project filters">
+                        <button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="web">Web Apps</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="ui">Design Systems</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="automation">Automation</button>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4" data-category="web,ui">
+                        <article class="project-card h-100">
+                            <div class="project-badge">SaaS Platform</div>
+                            <h3 class="h5">CollabSpace Revamp</h3>
+                            <p class="text-muted">Redesigned and rebuilt the workspace collaboration suite with React, Zustand, and Storybook-powered components.</p>
+                            <ul class="list-inline small text-muted mb-4">
+                                <li class="list-inline-item badge bg-primary-subtle text-primary">React</li>
+                                <li class="list-inline-item badge bg-primary-subtle text-primary">Storybook</li>
+                                <li class="list-inline-item badge bg-primary-subtle text-primary">GraphQL</li>
+                            </ul>
+                            <a class="stretched-link" href="https://dribbble.com/shots/portfolio-collabspace" target="_blank" rel="noopener">View case</a>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-category="automation,web">
+                        <article class="project-card h-100">
+                            <div class="project-badge">Fintech</div>
+                            <h3 class="h5">Ledgerly Automation Suite</h3>
+                            <p class="text-muted">Architected microservices and UI for automated bookkeeping. Reduced reconciliation time by 78% for enterprise clients.</p>
+                            <ul class="list-inline small text-muted mb-4">
+                                <li class="list-inline-item badge bg-primary-subtle text-primary">NestJS</li>
+                                <li class="list-inline-item badge bg-primary-subtle text-primary">PostgreSQL</li>
+                                <li class="list-inline-item badge bg-primary-subtle text-primary">AWS</li>
+                            </ul>
+                            <a class="stretched-link" href="https://www.behance.net/gallery/ledgerly" target="_blank" rel="noopener">View case</a>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-category="ui">
+                        <article class="project-card h-100">
+                            <div class="project-badge">Design Ops</div>
+                            <h3 class="h5">Framerise Design System</h3>
+                            <p class="text-muted">Built an accessible component system powering 10+ white-label experiences with automated documentation pipelines.</p>
+                            <ul class="list-inline small text-muted mb-4">
+                                <li class="list-inline-item badge bg-primary-subtle text-primary">Figma</li>
+                                <li class="list-inline-item badge bg-primary-subtle text-primary">TypeScript</li>
+                                <li class="list-inline-item badge bg-primary-subtle text-primary">Playwright</li>
+                            </ul>
+                            <a class="stretched-link" href="https://github.com/likheetshetty/framerise" target="_blank" rel="noopener">View repo</a>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4" data-category="automation,web">
+                        <article class="project-card h-100">
+                            <div class="project-badge">Creator Tools</div>
+                            <h3 class="h5">StreamPulse Analytics</h3>
+                            <p class="text-muted">Delivered a real-time analytics dashboard with WebSockets and D3.js, enabling creators to iterate 3x faster on content.</p>
+                            <ul class="list-inline small text-muted mb-4">
+                                <li class="list-inline-item badge bg-primary-subtle text-primary">Next.js</li>
+                                <li class="list-inline-item badge bg-primary-subtle text-primary">WebSockets</li>
+                                <li class="list-inline-item badge bg-primary-subtle text-primary">D3.js</li>
+                            </ul>
+                            <a class="stretched-link" href="https://stream-pulse.app" target="_blank" rel="noopener">Visit product</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="section-padding bg-light">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-5">
+                        <span class="badge rounded-pill bg-primary-subtle text-primary">Resume</span>
+                        <h2 class="section-title mt-3">Experience &amp; education</h2>
+                        <p class="text-muted">A snapshot of roles where I championed user-driven development, operational excellence, and system scalability.</p>
+                        <a class="btn btn-primary" href="mailto:hello@likheet.dev?subject=Resume%20Request"><i class="bi bi-download me-2"></i>Request full resume</a>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="resume-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <h3 class="h5 mb-1">Principal Software Engineer · PixelForge</h3>
+                                        <span class="text-muted small">2022 — Present</span>
+                                    </div>
+                                    <p class="text-muted mb-2">Leading platform engineering for a B2B SaaS suite with 250K+ users. Defined technical strategy, introduced trunk-based delivery, and championed accessibility.</p>
+                                    <ul class="text-muted">
+                                        <li>Launched observability pipelines improving MTTR by 41%.</li>
+                                        <li>Shaped product roadmap alongside design &amp; GTM stakeholders.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <h3 class="h5 mb-1">Senior Frontend Engineer · NovaPay</h3>
+                                        <span class="text-muted small">2019 — 2022</span>
+                                    </div>
+                                    <p class="text-muted mb-2">Owned the digital banking experience, orchestrated micro-frontend adoption, and partnered with security for PCI-compliant releases.</p>
+                                    <ul class="text-muted">
+                                        <li>Boosted onboarding completion by 63% through UX modernization.</li>
+                                        <li>Introduced CI pipelines with 94% automated test coverage.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <h3 class="h5 mb-1">B.E. Computer Science · NIT Karnataka</h3>
+                                        <span class="text-muted small">2015 — 2019</span>
+                                    </div>
+                                    <p class="text-muted mb-2">Graduated with distinction. Led the developer student club, organizing community hackathons and mentorship programs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-padding">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge rounded-pill bg-primary-subtle text-primary">Toolkit</span>
+                    <h2 class="section-title mt-3">Technologies &amp; strengths</h2>
+                    <p class="text-muted">Technologies I rely on to ship measurable outcomes.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="glass-card h-100 p-4">
+                            <h3 class="h5">Front-end</h3>
+                            <p class="text-muted">Crafting accessible, high-performing interfaces with component-driven architectures.</p>
+                            <ul class="list-unstyled text-muted small mb-0">
+                                <li><i class="bi bi-check-circle me-2 text-primary"></i>React / Next.js / Remix</li>
+                                <li><i class="bi bi-check-circle me-2 text-primary"></i>Tailwind, Chakra, Bootstrap</li>
+                                <li><i class="bi bi-check-circle me-2 text-primary"></i>Design tokens &amp; theming</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card h-100 p-4">
+                            <h3 class="h5">Back-end &amp; DevOps</h3>
+                            <p class="text-muted">Designing scalable services with modern infrastructure practices.</p>
+                            <ul class="list-unstyled text-muted small mb-0">
+                                <li><i class="bi bi-check-circle me-2 text-primary"></i>Node, NestJS, Go</li>
+                                <li><i class="bi bi-check-circle me-2 text-primary"></i>PostgreSQL, Redis, Prisma</li>
+                                <li><i class="bi bi-check-circle me-2 text-primary"></i>AWS, Docker, Terraform</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="glass-card h-100 p-4">
+                            <h3 class="h5">Collaboration</h3>
+                            <p class="text-muted">Amplifying team velocity through communication, mentorship, and strategy.</p>
+                            <ul class="list-unstyled text-muted small mb-0">
+                                <li><i class="bi bi-check-circle me-2 text-primary"></i>Product discovery facilitation</li>
+                                <li><i class="bi bi-check-circle me-2 text-primary"></i>Lean &amp; agile delivery</li>
+                                <li><i class="bi bi-check-circle me-2 text-primary"></i>Cross-functional mentorship</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding bg-light">
+            <div class="container">
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-5">
+                        <span class="badge rounded-pill bg-primary-subtle text-primary">Collaborate</span>
+                        <h2 class="section-title mt-3">Let’s build something meaningful</h2>
+                        <p class="text-muted">I love partnering with founders, product leaders, and creative teams to craft experiences that make an impact. Tell me about your challenge and let's explore it together.</p>
+                        <div class="d-flex flex-column gap-3 text-muted">
+                            <div><i class="bi bi-envelope me-2 text-primary"></i><a href="mailto:hello@likheet.dev" class="text-decoration-none">hello@likheet.dev</a></div>
+                            <div><i class="bi bi-geo-alt me-2 text-primary"></i>Bengaluru · Remote friendly</div>
+                            <div><i class="bi bi-clock me-2 text-primary"></i>Responds within 2 business days</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ms-lg-auto">
+                        <div class="glass-card p-4 p-lg-5">
+                            <h3 class="h5 fw-semibold mb-3">Project inquiry form</h3>
+                            <form class="row g-3" action="https://formspree.io/f/mayzwqvb" method="POST">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="company" class="form-label">Company / Organization</label>
+                                    <input type="text" class="form-control" id="company" name="company" placeholder="Optional">
+                                </div>
+                                <div class="col-12">
+                                    <label for="project" class="form-label">Project Overview</label>
+                                    <textarea class="form-control" id="project" name="project" rows="4" placeholder="Tell me about the challenge you're solving" required></textarea>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="timeline" class="form-label">Ideal Timeline</label>
+                                    <select id="timeline" name="timeline" class="form-select">
+                                        <option value="discovery">Discovery call</option>
+                                        <option value="1-3">1-3 months</option>
+                                        <option value="3-6">3-6 months</option>
+                                        <option value="6+">6+ months</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="budget" class="form-label">Budget Range</label>
+                                    <select id="budget" name="budget" class="form-select">
+                                        <option value="tbd">TBD</option>
+                                        <option value="25k">Up to $25k</option>
+                                        <option value="50k">$25k - $50k</option>
+                                        <option value="75k">$50k - $75k</option>
+                                        <option value="100k">$75k+</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100">Submit inquiry</button>
+                                </div>
+                                <p class="small text-muted mb-0">Prefer email? Write to <a href="mailto:hello@likheet.dev" class="text-decoration-none">hello@likheet.dev</a>.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" data-section class="relative border-t border-white/5 py-24">
+            <div class="mx-auto max-w-section px-6">
+                <div class="section-heading">
+                    <span>Education</span>
+                    <h2>Grounded in electronics, inspired by possibility</h2>
+                    <p>Strong academic performance combined with curiosity beyond the classroom.</p>
+                </div>
+                <div class="mt-16 grid gap-8 md:grid-cols-3">
+                    <article class="education-card">
+                        <h3>B.E. Electronics &amp; Communication</h3>
+                        <p class="text-sm uppercase tracking-[0.3em] text-slate-400">RV Institute of Technology &amp; Management</p>
+                        <p class="mt-4 text-sm text-slate-300">2021 – 2025 · CGPA 8.52</p>
+                    </article>
+                    <article class="education-card">
+                        <h3>Higher Secondary · CBSE</h3>
+                        <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Sri Chaitanya PU College</p>
+                        <p class="mt-4 text-sm text-slate-300">2020 · 93%</p>
+                    </article>
+                    <article class="education-card">
+                        <h3>Secondary School</h3>
+                        <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Sri Chaitanya Techno School</p>
+                        <p class="mt-4 text-sm text-slate-300">2018 · 91%</p>
+                    </article>
+                </div>
+=======
+    <footer class="py-4">
+        <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+            <p class="mb-0 text-muted">&copy; <span id="currentYear"></span> Likheet Shetty. Crafted with curiosity.</p>
+            <div class="d-flex gap-3">
+                <a class="text-muted" href="https://github.com/likheetshetty" target="_blank" rel="noopener">GitHub</a>
+                <a class="text-muted" href="https://www.linkedin.com/in/likheetshetty" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="text-muted" href="mailto:hello@likheet.dev">Email</a>
+            </div>
+        </section>
+
+        <section id="contact" data-section class="relative py-24">
+            <div class="mx-auto max-w-section px-6">
+                <div class="rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 via-white/0 to-white/5 p-12 shadow-card backdrop-blur">
+                    <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+                        <div>
+                            <span class="text-xs uppercase tracking-[0.3em] text-accentSoft">Let’s build something bold</span>
+                            <h2 class="mt-6 font-display text-4xl font-semibold tracking-tight text-white">Open to collaborations, internships, and research-driven teams.</h2>
+                            <p class="mt-4 text-base text-slate-300">Whether you're exploring AI-first products, data platforms, or immersive web experiences, I’d love to connect.</p>
+                            <div class="mt-8 flex flex-wrap items-center gap-4 text-sm">
+                                <a href="mailto:likheet.s@gmail.com" class="contact-link">likheet.s@gmail.com</a>
+                                <a href="tel:+918904090247" class="contact-link">+91 89040 90247</a>
+                                <span class="rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.3em] text-slate-400">Bangalore · Remote Ready</span>
+                            </div>
+                        </div>
+                        <div class="space-y-6 text-sm text-slate-300">
+                            <p class="rounded-2xl border border-white/5 bg-white/5 p-6">"Likheet demonstrates an exceptional balance of curiosity and execution. His work on fraud analytics showcased a sophisticated understanding of both data science and product implications."</p>
+                            <p class="rounded-2xl border border-white/5 bg-white/5 p-6">Outside of code, Likheet mentors peers, plays table tennis, and contributes to life-saving initiatives as a BLS-certified volunteer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-white/5 bg-midnight/60 py-10 text-sm text-slate-500">
+        <div class="mx-auto flex max-w-section flex-col items-center justify-between gap-4 px-6 text-center lg:flex-row lg:text-left">
+            <p>&copy; <span data-year></span> Likheet Shetty. Crafted with intention and curiosity.</p>
+            <div class="flex items-center gap-4">
+                <a class="hover:text-neon" href="#hero">Back to top</a>
+                <a class="hover:text-neon" href="https://github.com/likheetshetty" target="_blank" rel="noopener">GitHub</a>
+                <a class="hover:text-neon" href="https://www.linkedin.com/in/likheet" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+        <button type="button" class="back-to-top" aria-label="Scroll back to top" data-back-to-top>
+            <span aria-hidden="true">↑</span>
+        </button>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+=======
+    <button id="backToTop" class="btn btn-primary rounded-circle" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
