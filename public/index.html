@@ -1,8 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likheet Shetty · Developer Portfolio</title>
+    <meta name="description" content="Portfolio for Likheet Shetty showcasing achievements in AI, full-stack development, and engineering leadership.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Space Grotesk', 'sans-serif'],
+                        body: ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        midnight: '#090b1a',
+                        accent: '#6e7bff',
+                        accentSoft: '#b4c5ff',
+                        neon: '#5ef3d1'
+                    },
+                    maxWidth: {
+                        section: '1150px'
+                    },
+                    boxShadow: {
+                        glow: '0 0 40px rgba(94, 243, 209, 0.35)',
+                        card: '0 20px 45px rgba(10, 12, 32, 0.45)'
+                    },
+                    backgroundImage: {
+                        hero: 'radial-gradient(circle at top left, rgba(110, 123, 255, 0.45), transparent 55%), radial-gradient(circle at 30% 70%, rgba(94, 243, 209, 0.35), transparent 60%)'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-midnight text-slate-100 font-body">
+    <div class="glow-surface"></div>
+    <header class="fixed inset-x-0 top-0 z-30 border-b border-white/5 backdrop-blur-lg bg-midnight/70">
+        <nav class="mx-auto flex max-w-section items-center justify-between px-6 py-4">
+            <a href="#hero" class="text-lg font-display font-semibold tracking-tight text-white">Likheet Shetty</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="primary-navigation" class="nav-links hidden items-center gap-8 text-sm font-medium uppercase tracking-[0.18em] text-slate-300 lg:flex">
+                <li><a class="nav-link" href="#hero" data-nav-link>Home</a></li>
+                <li><a class="nav-link" href="#achievements" data-nav-link>Achievements</a></li>
+                <li><a class="nav-link" href="#experience" data-nav-link>Experience</a></li>
+                <li><a class="nav-link" href="#projects" data-nav-link>Projects</a></li>
+                <li><a class="nav-link" href="#skills" data-nav-link>Skills</a></li>
+                <li><a class="nav-link" href="#contact" data-nav-link>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-24">
+        <section id="hero" data-section class="relative overflow-hidden">
+            <div class="mx-auto flex max-w-section flex-col gap-12 px-6 pb-24 pt-28 lg:flex-row lg:items-center">
+                <div class="w-full lg:w-3/5">
+                    <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-accentSoft">AI Engineer · Full-Stack Developer</span>
+                    <h1 class="mt-8 font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">Engineering intelligent experiences that feel effortless.</h1>
+                    <p class="mt-6 max-w-2xl text-lg text-slate-300">I’m an engineering student and developer focused on building human-centred, AI-powered products. From voice-enabled apps to fraud detection models, I craft solutions that merge precision, accessibility, and scale.</p>
+                    <div class="mt-10 flex flex-wrap items-center gap-4">
+                        <a href="#projects" class="group inline-flex items-center gap-2 rounded-full border border-neon/60 bg-neon/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-neon transition hover:bg-neon/20 hover:shadow-glow">Explore Work <span aria-hidden="true" class="transition group-hover:translate-x-1">→</span></a>
+                        <a href="mailto:likheet.s@gmail.com" class="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-slate-200 transition hover:border-white/40 hover:text-white">Let's Collaborate</a>
+                    </div>
+                    <dl class="mt-12 grid gap-6 text-sm text-slate-300 sm:grid-cols-2">
+                        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                            <dt class="text-xs uppercase tracking-[0.35em] text-slate-400">Current Focus</dt>
+                            <dd class="mt-3 font-display text-xl text-white">AI-driven interfaces &amp; scalable web systems</dd>
+                        </div>
+                        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                            <dt class="text-xs uppercase tracking-[0.35em] text-slate-400">Based In</dt>
+                            <dd class="mt-3 font-display text-xl text-white">Bangalore, India · GMT+5:30</dd>
+                        </div>
+                    </dl>
+                    <div class="mt-12 flex flex-wrap items-center gap-5 text-sm text-slate-400">
+                        <a class="inline-flex items-center gap-2 hover:text-neon" href="https://www.linkedin.com/in/likheet" target="_blank" rel="noopener">LinkedIn<span aria-hidden="true">↗</span></a>
+                        <a class="inline-flex items-center gap-2 hover:text-neon" href="https://github.com/likheetshetty" target="_blank" rel="noopener">GitHub<span aria-hidden="true">↗</span></a>
+                        <a class="inline-flex items-center gap-2 hover:text-neon" href="https://www.hackerrank.com/likheet" target="_blank" rel="noopener">HackerRank<span aria-hidden="true">↗</span></a>
+                        <span class="inline-flex items-center gap-2 text-slate-500">📞 +91 89040 90247</span>
+                    </div>
+                </div>
+                <div class="relative w-full lg:w-2/5">
+                    <div class="glass-tile">
+                        <p class="text-sm uppercase tracking-[0.35em] text-neon/80">Snapshot</p>
+                        <ul class="mt-6 space-y-4 text-sm text-slate-200">
+                            <li class="flex items-start gap-4"><span class="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-neon"></span><span>Azure AI Engineer Associate · Google Cloud Digital Leader certified</span></li>
+                            <li class="flex items-start gap-4"><span class="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-neon"></span><span>Top 20 finish in GeeksforGeeks Weekly Contest 162 · 3⭐ HackerRank problem solving</span></li>
+                            <li class="flex items-start gap-4"><span class="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-neon"></span><span>Experience delivering responsive web products &amp; bot detection systems at DesiQna</span></li>
+                            <li class="flex items-start gap-4"><span class="mt-1 inline-flex h-2.5 w-2.5 flex-none rounded-full bg-neon"></span><span>Passionate technologist exploring 3D web, data science, and voice-first interfaces</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" data-section class="relative border-t border-white/5 py-24">
+            <div class="mx-auto max-w-section px-6">
+                <div class="section-heading">
+                    <span>Milestones</span>
+                    <h2>Highlights that reflect curiosity and rigor</h2>
+                    <p>Certifications and recognitions that underscore a commitment to building trustworthy, scalable technology.</p>
+                </div>
+                <div class="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+                    <article class="capsule-card">
+                        <h3>Azure AI Engineer Associate</h3>
+                        <p>Validated expertise in designing and implementing AI solutions on Azure—covering NLP, vision, and responsible AI practices.</p>
+                    </article>
+                    <article class="capsule-card">
+                        <h3>Google Cloud Digital Leader</h3>
+                        <p>Developed fluency in modern cloud foundations by completing 50+ skill labs and architecting secure, efficient cloud workflows.</p>
+                    </article>
+                    <article class="capsule-card">
+                        <h3>GeeksforGeeks Contest #162 · Top 20</h3>
+                        <p>Ranked 20th globally for algorithmic proficiency in a high-paced weekly coding challenge.</p>
+                    </article>
+                    <article class="capsule-card">
+                        <h3>3★ Problem Solving · HackerRank</h3>
+                        <p>Consistently solving complex data structures and algorithms problems with a focus on clean, optimized solutions.</p>
+                    </article>
+                    <article class="capsule-card">
+                        <h3>CYBERATIC Quiz · 2nd Place</h3>
+                        <p>Secured runner-up position across the institute in a cybersecurity-driven knowledge challenge.</p>
+                    </article>
+                    <article class="capsule-card">
+                        <h3>MATLAB Onramp Certified</h3>
+                        <p>Built a foundation in numerical computing and simulation to support research-driven engineering explorations.</p>
+                    </article>
+=======
     <title>Likheet Shetty · Software Engineer Portfolio</title>
     <meta name="description" content="Developer portfolio for Likheet Shetty showcasing achievements, resume highlights, and selected projects.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,6 +219,39 @@
             </div>
         </section>
 
+        <section id="experience" data-section class="relative py-24">
+            <div class="mx-auto max-w-section px-6">
+                <div class="section-heading">
+                    <span>Experience</span>
+                    <h2>Turning ideas into robust, production-ready systems</h2>
+                    <p>Leading projects from user empathy to deployment, with attention to security, accessibility, and maintainability.</p>
+                </div>
+                <div class="mt-16 space-y-10 border-l border-white/10 pl-6">
+                    <article class="timeline-node">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-body">
+                            <div class="flex flex-wrap items-baseline justify-between gap-3">
+                                <h3 class="text-xl font-semibold text-white">SDE Intern · DesiQna</h3>
+                                <span class="text-sm uppercase tracking-[0.3em] text-slate-400">Jul 2023 – Dec 2023 · Remote, India</span>
+                            </div>
+                            <ul class="mt-5 space-y-3 text-sm text-slate-300">
+                                <li>Engineered a responsive content experience, elevating engagement for a high-traffic Q&amp;A community.</li>
+                                <li>Designed verification flows and anti-bot safeguards, integrating Google reCAPTCHA to protect user trust.</li>
+                                <li>Collaborated across design and backend stakeholders to refine architecture using HTML, CSS, JavaScript, Bootstrap, and MySQL.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="timeline-node">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-body">
+                            <div class="flex flex-wrap items-baseline justify-between gap-3">
+                                <h3 class="text-xl font-semibold text-white">Green Environment Program</h3>
+                                <span class="text-sm uppercase tracking-[0.3em] text-slate-400">Community Initiative</span>
+                            </div>
+                            <p class="mt-5 text-sm text-slate-300">Contributed to sustainability advocacy by orchestrating awareness campaigns focused on waste management and grassroots environmental action.</p>
+                        </div>
+                    </article>
+=======
         <section id="about" class="section-padding">
             <div class="container">
                 <div class="row align-items-center gy-5">
@@ -133,6 +298,53 @@
             </div>
         </section>
 
+        <section id="projects" data-section class="relative border-y border-white/5 py-24">
+            <div class="mx-auto max-w-section px-6">
+                <div class="section-heading">
+                    <span>Projects</span>
+                    <h2>Experiments and products that explore AI, data, and creative coding</h2>
+                    <p>Select work spanning fraud detection, pathfinding visualizations, and immersive 3D web experiences.</p>
+                </div>
+                <div class="mt-12 flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.3em] text-slate-300">
+                    <button class="filter-chip active" type="button" data-filter="all">All</button>
+                    <button class="filter-chip" type="button" data-filter="ai">AI &amp; Data</button>
+                    <button class="filter-chip" type="button" data-filter="web">Web</button>
+                    <button class="filter-chip" type="button" data-filter="creative">Creative Tech</button>
+                </div>
+                <div class="mt-16 grid gap-10 md:grid-cols-2">
+                    <article class="project-card" data-project data-tags="ai">
+                        <div class="flex items-center justify-between gap-3">
+                            <h3>Credit Card Fraud Detection</h3>
+                            <span class="project-tag">AI &amp; Data</span>
+                        </div>
+                        <p>Built an ensemble-based model combining Random Forest and Gradient Boosting to surface rare fraudulent transactions. Employed SMOTE and Near-Miss for class balance and benchmarked 6+ models, including stacking approaches.</p>
+                        <p class="tech">Python · NumPy · Pandas · Scikit-Learn</p>
+                    </article>
+                    <article class="project-card" data-project data-tags="web">
+                        <div class="flex items-center justify-between gap-3">
+                            <h3>AI News App</h3>
+                            <span class="project-tag">Web</span>
+                        </div>
+                        <p>Designed a voice-first news platform with Alan AI, enabling conversational navigation, article summarization, and hands-free browsing using React and Material UI.</p>
+                        <p class="tech">Alan AI · React · Material UI · JavaScript</p>
+                    </article>
+                    <article class="project-card" data-project data-tags="web">
+                        <div class="flex items-center justify-between gap-3">
+                            <h3>Pathfinding Algorithms Visualiser</h3>
+                            <span class="project-tag">Web</span>
+                        </div>
+                        <p>Interactive playground supporting DFS, BFS, A*, and Dijkstra, with real-time maze generation and animation to demystify graph traversal strategies.</p>
+                        <p class="tech">HTML · CSS · JavaScript · Vis.js</p>
+                    </article>
+                    <article class="project-card" data-project data-tags="creative">
+                        <div class="flex items-center justify-between gap-3">
+                            <h3>Stack-It!</h3>
+                            <span class="project-tag">Creative Tech</span>
+                        </div>
+                        <p>Constructed a physics-based stacking game blending Three.js and Cannon.js with autopilot mode and tuned cooldowns for fluid, accessible gameplay.</p>
+                        <p class="tech">HTML · CSS · JavaScript · Three.js · Cannon.js</p>
+                    </article>
+=======
         <section id="achievements" class="section-padding bg-light">
             <div class="container">
                 <div class="text-center mb-5">
@@ -172,6 +384,37 @@
             </div>
         </section>
 
+        <section id="skills" data-section class="relative py-24">
+            <div class="mx-auto max-w-section px-6">
+                <div class="section-heading">
+                    <span>Toolkit</span>
+                    <h2>Skills rooted in engineering fundamentals and experimentation</h2>
+                    <p>Combining systems thinking with product intuition to build experiences people trust.</p>
+                </div>
+                <div class="mt-16 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+                    <div class="space-y-8">
+                        <div class="skill-block">
+                            <h3>Languages</h3>
+                            <p>C · C++ · Python · SQL · HTML</p>
+                        </div>
+                        <div class="skill-block">
+                            <h3>Frameworks &amp; Libraries</h3>
+                            <p>Bootstrap · ShadCN · Three.js · Hugging Face APIs · Alan AI</p>
+                        </div>
+                        <div class="skill-block">
+                            <h3>Platforms &amp; Tools</h3>
+                            <p>Git · GitHub · Vercel · RapidAPI · Stable Diffusion · VS Code · PyCharm · Jupyter Notebook</p>
+                        </div>
+                    </div>
+                    <div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-card backdrop-blur">
+                        <h3 class="text-xl font-semibold text-white">Coursework &amp; Interests</h3>
+                        <ul class="mt-6 space-y-4 text-sm text-slate-300">
+                            <li><span class="text-neon">•</span> Operating Systems · Computer Networks · Object Oriented Programming</li>
+                            <li><span class="text-neon">•</span> Cloud-native AI integrations and responsible ML deployment</li>
+                            <li><span class="text-neon">•</span> Community impact through STEM advocacy and sustainability initiatives</li>
+                            <li><span class="text-neon">•</span> Recreational table tennis and BLS-certified volunteer work</li>
+                        </ul>
+=======
         <section id="projects" class="section-padding">
             <div class="container">
                 <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between mb-4">
@@ -406,8 +649,32 @@
                 </div>
             </div>
         </section>
-    </main>
 
+        <section id="education" data-section class="relative border-t border-white/5 py-24">
+            <div class="mx-auto max-w-section px-6">
+                <div class="section-heading">
+                    <span>Education</span>
+                    <h2>Grounded in electronics, inspired by possibility</h2>
+                    <p>Strong academic performance combined with curiosity beyond the classroom.</p>
+                </div>
+                <div class="mt-16 grid gap-8 md:grid-cols-3">
+                    <article class="education-card">
+                        <h3>B.E. Electronics &amp; Communication</h3>
+                        <p class="text-sm uppercase tracking-[0.3em] text-slate-400">RV Institute of Technology &amp; Management</p>
+                        <p class="mt-4 text-sm text-slate-300">2021 – 2025 · CGPA 8.52</p>
+                    </article>
+                    <article class="education-card">
+                        <h3>Higher Secondary · CBSE</h3>
+                        <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Sri Chaitanya PU College</p>
+                        <p class="mt-4 text-sm text-slate-300">2020 · 93%</p>
+                    </article>
+                    <article class="education-card">
+                        <h3>Secondary School</h3>
+                        <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Sri Chaitanya Techno School</p>
+                        <p class="mt-4 text-sm text-slate-300">2018 · 91%</p>
+                    </article>
+                </div>
+=======
     <footer class="py-4">
         <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
             <p class="mb-0 text-muted">&copy; <span id="currentYear"></span> Likheet Shetty. Crafted with curiosity.</p>
@@ -416,9 +683,48 @@
                 <a class="text-muted" href="https://www.linkedin.com/in/likheetshetty" target="_blank" rel="noopener">LinkedIn</a>
                 <a class="text-muted" href="mailto:hello@likheet.dev">Email</a>
             </div>
+        </section>
+
+        <section id="contact" data-section class="relative py-24">
+            <div class="mx-auto max-w-section px-6">
+                <div class="rounded-3xl border border-white/10 bg-gradient-to-br from-white/5 via-white/0 to-white/5 p-12 shadow-card backdrop-blur">
+                    <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+                        <div>
+                            <span class="text-xs uppercase tracking-[0.3em] text-accentSoft">Let’s build something bold</span>
+                            <h2 class="mt-6 font-display text-4xl font-semibold tracking-tight text-white">Open to collaborations, internships, and research-driven teams.</h2>
+                            <p class="mt-4 text-base text-slate-300">Whether you're exploring AI-first products, data platforms, or immersive web experiences, I’d love to connect.</p>
+                            <div class="mt-8 flex flex-wrap items-center gap-4 text-sm">
+                                <a href="mailto:likheet.s@gmail.com" class="contact-link">likheet.s@gmail.com</a>
+                                <a href="tel:+918904090247" class="contact-link">+91 89040 90247</a>
+                                <span class="rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.3em] text-slate-400">Bangalore · Remote Ready</span>
+                            </div>
+                        </div>
+                        <div class="space-y-6 text-sm text-slate-300">
+                            <p class="rounded-2xl border border-white/5 bg-white/5 p-6">"Likheet demonstrates an exceptional balance of curiosity and execution. His work on fraud analytics showcased a sophisticated understanding of both data science and product implications."</p>
+                            <p class="rounded-2xl border border-white/5 bg-white/5 p-6">Outside of code, Likheet mentors peers, plays table tennis, and contributes to life-saving initiatives as a BLS-certified volunteer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-white/5 bg-midnight/60 py-10 text-sm text-slate-500">
+        <div class="mx-auto flex max-w-section flex-col items-center justify-between gap-4 px-6 text-center lg:flex-row lg:text-left">
+            <p>&copy; <span data-year></span> Likheet Shetty. Crafted with intention and curiosity.</p>
+            <div class="flex items-center gap-4">
+                <a class="hover:text-neon" href="#hero">Back to top</a>
+                <a class="hover:text-neon" href="https://github.com/likheetshetty" target="_blank" rel="noopener">GitHub</a>
+                <a class="hover:text-neon" href="https://www.linkedin.com/in/likheet" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
         </div>
+        <button type="button" class="back-to-top" aria-label="Scroll back to top" data-back-to-top>
+            <span aria-hidden="true">↑</span>
+        </button>
     </footer>
 
+    <script src="js/script.js" defer></script>
+=======
     <button id="backToTop" class="btn btn-primary rounded-circle" aria-label="Back to top">
         <i class="bi bi-arrow-up"></i>
     </button>
