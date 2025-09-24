@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fetchPosts = async () => {
         try {
-            const response = await fetch('api/posts');
+            const response = await fetch('/api/posts');
             const data = await response.json();
             postsList.innerHTML = '';
             if (data.posts && data.posts.length > 0) {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            const response = await fetch('api/posts', {
+            const response = await fetch('/api/posts', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

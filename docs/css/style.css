@@ -204,7 +204,14 @@ body {
     text-decoration: underline;
 }
 
-
+code {
+    background-color: #2a2a2a;
+    color: #e5e5e5;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+}
 
 .footer {
     border-top: 1px solid var(--border);
